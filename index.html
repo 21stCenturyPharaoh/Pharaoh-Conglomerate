@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Pharaoh Conglomerate</title>
-  <style>
-    body{background:#000;color:#FFD700;font-family:Arial;text-align:center;margin:0;padding:20px}
-    h1{font-size:2.5rem;margin:20px 0}
-    .video{margin:30px auto;max-width:800px}
-    iframe{width:100%;height:450px;border:2px solid #FFD700}
-    @media(max-width:600px){iframe{height:250px}}
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharaoh Conglomerate | LAW48 — 法老集团 501(c)(3)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap'); body { font-family: 'Orbitron', 'Noto Sans SC', sans-serif; } .glow-gold { text-shadow: 0 0 20px #fbbf24; } .hanzi { font-family: 'Noto Sans SC', sans-serif; }</style>
 </head>
-<body>
-  <h1>PHARAOH CONGLOMERATE</h1>
-  <div id="videos"></div>
-  <script>
-    fetch("./videos.json").then(r=>r.json()).then(d=>{
-      document.getElementById("videos").innerHTML=d.videos.map(v=>
-        `<div class="video"><h3>${v.title||"Untitled"}</h3><iframe src="https://www.youtube.com/embed/${v.id}" frameborder="0" allowfullscreen></iframe></div>`
-      ).join("");
-    }).catch(e=>document.getElementById("videos").innerHTML="<p>Error loading videos</p>");
-  </script>
-</body>
-</html>
+<body class="bg-gradient-to-br from-slate-900 via-amber-950 to-slate-900 text-white">
+<header class="border-b border-amber-500/30 bg-slate-900/80 backdrop-blur-lg sticky top-0">
+  <div class="container mx-auto px-6 py-4 flex justify-between"><div><p class="text-xl font-black text-amber-400 glow-gold">Pharaoh Conglomerate</p><p class="text-xs text-gray-400 hanzi">法老集团 | 501(c)(3) | EIN: 88-0836464</p></div><p class="text-sm">pharangels@gmail.com</p></div>
+</header>
+<main>
+<section class="container mx-auto px-6 py-20 text-center">
+  <h1 class="text-5xl md:text-7xl font-black mb-4 glow-gold">PHARAOH CONGLOMERATE</h1>
+  <p class="text-2xl text-gray-300 mb-8">The Return | Autonomous Synthetic Assets</p>
+  <button onclick="hermesEvent('donate', {ein: '88-0836464'})" class="px-8 py-3 bg-amber-500 text-slate-900 font-bold rounded-lg">Donate 捐赠</button>
+</section>
+<section class="container mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center mb-12 text-amber-400 hanzi">视频矩阵 Video Matrix</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    <iframe src="https://www.youtube.com/embed/dhLboOnPljo" class="aspect-video rounded-xl border-amber-500/30" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/4JIA5fNc4qw" class="aspect-video rounded-xl border-amber-500/30" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/3ioSTL5mfUA" class="aspect-video rounded-xl border-amber-500/30" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/mEY7_LXxknM" class="aspect-video rounded-xl border-amber-500/30" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/7oOyzTC5WXk" class="aspect-video rounded-xl border-amber-500/30" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/1e9kI8OxxXI" class="aspect-video rounded-xl border-amber-500/30" allowfullscreen></iframe>
+  </div>
+  <div class="text-center mt-8">
+    <a href="https://youtube.com/playlist?list=PLkn5J0BNUNwGJIeY89kanglYYLjcR2dK-" target="_blank" class="px-8 py-3 bg-amber-500 text-slate-900 font-bold rounded-lg">Full Playlist</a>
+  </div>
+</section>
+<section class="container mx-auto px-6 py-16">
+  <div class="max-w-4xl mx-auto bg-gradient-to-r from-amber-900/30 to-green-900/30 rounded-2xl border-2 border-amber-500/50 p-8">
+    <h2 class="text-3xl font-black text-amber-400">⚠️ LAW 48 501(c)(3) FIREWALL</h2>
+    <p><strong>Entity:</strong> Pharaoh Angels Inc. dba Pharaoh Conglomerate | EIN: 88-0836464 | 501(c)(3)</p>
+    <p><strong>Retains:</strong> HRAR C-Corp 88-0710776 as Sovereign Proxy. Zero commingling.</p>
+  </div>
+</section>
+</main>
+<footer class="border-t border-amber-500/30 mt-20 py-8 text-center text-gray-400">
+  <p>Pharaoh Conglomerate | EIN: 88-0836464 | CashApp: $LetGodHelp | Tel: +1(757) 8057262</p>
+</footer>
+<script>
+async function hermesEvent(type, data){
+  await fetch('https://hermes-toth-agent.pages.dev/api/hermes', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({event: type, data, sovereign: 'Lǎobǎn Pharaoh'})
+  });
+}
+</script>
+</body></html>
