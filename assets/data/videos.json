@@ -1,0 +1,30 @@
+{
+  "videos": [
+    {
+      "id": "dhLboOnPljo",
+      "title": "The Pharaoh Conglomerate",
+      "platform": "youtube",
+      "category": "Introduction",
+      "language": "en",
+      "featured": true,
+      "description": "Introduction to The Pharaoh Conglomerate 501c3",
+      "thumbnail": "https://img.youtube.com/vi/dhLboOnPljo/maxresdefault.jpg",
+      "embed": "https://www.youtube.com/embed/dhLboOnPljo",
+      "watch": "https://youtu.be/dhLboOnPljo",
+      "tags": ["pharaoh", "501c3", "charity", "law48"]
+    },
+    {
+      "id": "4JIA5fNc4qw",
+      "title": "The Return - Autonomous Synthetic Assets",
+      "platform": "youtube",
+      "category": "Featured",
+      "language": "en",
+      "featured": true,
+      "description": "The Return series",
+      "thumbnail": "https://img.youtube.com/vi/4JIA5fNc4qw/maxresdefault.jpg",
+      "embed": "https://www.youtube.com/embed/4JIA5fNc4qw",
+      "watch": "https://youtu.be/4JIA5fNc4qw",
+      "tags": ["return", "synthetic", "assets"]
+    }
+  ]
+}
