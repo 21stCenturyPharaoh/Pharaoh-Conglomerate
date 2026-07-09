@@ -1,0 +1,1 @@
+export async function onRequestPost({request, env}){const d=await request.json();await env.HRAR_KV.put(`tokens:${Date.now()}`,JSON.stringify(d));return new Response(JSON.stringify({ok:true,trade_posted:true}),{headers:{"Content-Type":"application/json","Access-Control-Allow-Origin":"*"}})}

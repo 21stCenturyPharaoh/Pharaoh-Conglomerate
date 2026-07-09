@@ -1,0 +1,1 @@
+export async function onRequestPost({request, env}){const d=await request.json();await env.HRAR_KV.put(`profile:${d.email}`,JSON.stringify(d));return new Response(JSON.stringify({ok:true,entity:"HRAR C-Corp",id:d.email}),{headers:{"Content-Type":"application/json","Access-Control-Allow-Origin":"*"}})}

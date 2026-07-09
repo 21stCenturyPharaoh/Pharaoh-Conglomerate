@@ -1,0 +1,1 @@
+export async function onRequestPost({request}){return new Response(JSON.stringify({ok:true,pay_to:"CashApp $LetGodHelp",msg:"Fee required before posting live"}),{headers:{"Content-Type":"application/json","Access-Control-Allow-Origin":"*"}})}
