@@ -1,0 +1,19 @@
+
+<div class="card" style="grid-column:span 3"><h3>🇭🇰 HK HQ Pipeline | WeChat + Boss Zhipin</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+<div>
+<h4>📱 WeChat QR</h4>
+<p>Scan to join HRAR Eco-Stewards HK</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://gothrar.pages.dev/lawyers" alt="WeChat HRAR">
+</div>
+<div>
+<h4>💼 Boss Zhipin Widget</h4>
+<form data-endpoint="https://hermes-toth-agent.pages.dev/api/hrar-profile">
+<input name="name" placeholder="Name" required>
+<select name="role"><option>Pro Bono Lawyer</option><option>Intern</option></select>
+<input name="wechat_id" placeholder="WeChat ID">
+<input name="email" required>
+<button class="btn" style="background:#d4af37;color:#0a0a0a;padding:0.7rem 1rem;border:none">Post to Boss Zhipin</button>
+</form>
+</div></div>
+<p style="font-size:0.8rem">API: `POST /api/hrar-profile` → HRAR_KV Only. C-Corp Track.</p></div>
