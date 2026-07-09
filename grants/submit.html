@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>H.A.L.EL Grant Portal</title>
+<style>body{background:#0a0a0a;color:#d4af37;font-family:Georgia;padding:2rem}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.card{background:#1a1a1a;border:2px solid #d4af37;padding:1rem}input,textarea,select{width:100%;padding:0.5rem;margin:0.5rem 0;background:#0a0a0a;color:#d4af37;border:1px solid #d4af37}.btn{background:#d4af37;color:#0a0a0a;padding:0.7rem 1.5rem;border:none;cursor:pointer}h1{text-align:center}</style></head>
+<body><h1>Pharaoh Angels Inc | H.A.L.EL Grant Portal | EIN 88-0836464</h1>
+<div style="background:#8b0000;color:#fff;padding:1rem">IRS FIREWALL: 501(c)(3). Grant/Donation Track. Separate from HRAR VC.</div>
+
+<div class="grid">
+<div class="card"><h3>🇺🇸 INEFAA: H-2A H-2B Portal</h3>
+<form data-endpoint="https://hermes-toth-agent.pages.dev/api/pharaoh-profile">
+<input name="org_name" placeholder="Farm/Business Name" required><select name="visa_type"><option>H-2A Agriculture</option><option>H-2B Non-Agriculture</option></select>
+<input type="number" name="workers_needed" placeholder="# Workers Needed"><textarea name="mission" placeholder="VA → Freeport Monrovia Pipeline Use"></textarea>
+<button class="btn">Submit H-2 Request</button></form></div>
+
+<div class="card"><h3>🌍 Liberia 501(c)(3) Ops</h3>
+<form data-endpoint="https://hermes-toth-agent.pages.dev/api/pharaoh-certs">
+<input name="project" placeholder="Project Name: Gabe's Landscaping / The Drugstore"><textarea name="needs" placeholder="Donated Equipment/Supplies Needed"></textarea>
+<input name="logistics" placeholder="Pipeline Contact"><button class="btn">Submit Liberia Request</button></form></div>
+
+<div class="card" style="grid-column:span 2"><h3>🏢 Organization Posting Fee</h3><p>Post volunteer needs to H.A.L.EL Exchange.</p>
+<form data-endpoint="https://hermes-toth-agent.pages.dev/api/org-post">
+<input name="org_name" placeholder="Organization Name" required><input name="email" required>
+<textarea name="need" placeholder="Volunteer Need Description" required></textarea>
+<p style="color:#ff6b6b">Fee: Pay via CashApp $LetGodHelp | Fiscal Agent: Let God Help Resources Inc</p>
+<button class="btn">Post + Pay Fee</button></form></div>
+</div>
+
+<footer><p>Pharaoh Angels Inc 501(c)(3) | 160 Bankside Way Sacramento CA | Donations Tax-Deductible</p></footer></body></html>
