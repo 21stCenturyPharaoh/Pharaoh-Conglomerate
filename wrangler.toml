@@ -1,0 +1,7 @@
+name = "hermes-toth-agent"
+main = "worker.js"
+compatibility_date = "2026-04-04"
+
+[[kv_namespaces]]
+binding = "QUEUE_KV"
+id = "YOUR_KV_ID_HERE"
