@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>HRAR VC Dashboard</title>
+<style>body{background:#0a0a0a;color:#d4af37;font-family:Georgia;padding:2rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{background:#1a1a1a;border:2px solid #d4af37;padding:1rem}h1{text-align:center}.num{font-size:2rem;color:#fff}</style></head>
+<body><h1>HRAR Inc C-Corp | Eco-Stewards VC Dashboard</h1>
+<div style="background:#8b0000;color:#fff;padding:1rem">IRS FIREWALL: C-Corp. Not 501(c)(3). Investment Data Only. Not tax-deductible.</div>
+
+<div class="grid">
+<div class="card"><h3>🪙 Eco-Steward Tokens Minted</h3><div class="num" id="tokens">0</div><p>Utility only. Boss Zhipin Missions.</p></div>
+<div class="grid">
+<div class="card"><h3>⚖️ Pro Bono Lawyers</h3><div class="num" id="lawyers">0</div><p>Profiles Posted</p></div>
+<div class="card"><h3>🎓 Interns</h3><div class="num" id="interns">0</div><p>Profiles Posted</p></div>
+</div>
+
+<div class="card" style="grid-column:span 3"><h3>💎 Diamond Standard Maritime | BRI Silk Road → Freeport Monrovia</h3>
+<p>Status: <b>Pre-Seed Tiers 1-4 Open</b></p><p>Pipeline: Boss Zhipin Challenges → Angel Investors → VC</p>
+<button style="background:#d4af37;color:#0a0a0a;padding:0.7rem 1.5rem;border:none" onclick="alert('Contact: investors@hrar.inc')">Request Deck</button></div>
+
+<div class="card" style="grid-column:span 3"><h3>🌐 HK HQ + WeChat + Boss Zhipin</h3>
+<p>Integrate widgets here. API: `https://hermes-toth-agent.pages.dev/api/hrar-profile`</p></div>
+</div>
+
+<script>
+fetch('https://hermes-toth-agent.pages.dev/api/hrar-profile',{method:'POST',body:JSON.stringify({test:"count"})}).then(()=>{});
+document.getElementById('tokens').innerText = localStorage.getItem('tokens')||'0';
+</script>
+
+<footer><p>HRAR Inc | Retained by Pharaoh Angels Inc 501(c)(3) EIN 88-0836464</p></footer></body></html>

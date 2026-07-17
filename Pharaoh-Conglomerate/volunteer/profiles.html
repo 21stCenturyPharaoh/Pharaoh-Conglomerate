@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>H.A.L.EL Volunteer Exchange</title>
+<style>body{background:#0a0a0a;color:#d4af37;font-family:Georgia;padding:2rem}.card{background:#1a1a1a;border:2px solid #d4af37;padding:1.5rem;margin:1rem 0}input,textarea{width:100%;padding:0.5rem;margin:0.5rem 0;background:#0a0a0a;color:#d4af37;border:1px solid #d4af37}.btn{background:#d4af37;color:#0a0a0a;padding:0.7rem 1.5rem;border:none;cursor:pointer}</style></head>
+<body><h1>Pharaoh Angels Inc | H.A.L.L.EL Corps | EIN 88-0836464</h1>
+<div style="background:#8b0000;color:#fff;padding:1rem">IRS FIREWALL: 501(c)(3). Certificates are recognition only. No trade for cash.</div>
+
+<div class="card"><h3>📋 Volunteer Profile</h3>
+<form data-endpoint="/api/pharaoh-profile"><input name="name" placeholder="Full Name" required><input name="email" placeholder="Email" required>
+<textarea name="resume" placeholder="Resume / Skills"></textarea><select name="corps"><option>H.A.L.L.EL</option><option>INEFAA</option><option>Logistics</option></select>
+<button class="btn">Post Profile</button></form></div>
+
+<div class="card"><h3>💎 BRI + ESG Diamond Certificates</h3><p>Post certificates earned via Grant Track Missions.</p>
+<form data-endpoint="/api/pharaoh-certs"><input name="cert_name" placeholder="Certificate Name"><input type="file" accept=".pdf,.png,.jpg">
+<button class="btn">Upload Certificate</button></form></div>
+
+<div class="card"><h3>🏢 Organizations Post Volunteer Needs</h3><p>Fee required. Paid to Fiscal Agent.</p>
+<form data-endpoint="/api/org-post"><input name="org_name" placeholder="Organization Name" required><input name="email" placeholder="Contact Email" required>
+<textarea name="need" placeholder="Volunteer Need Description" required></textarea><input type="number" name="volunteers_needed" placeholder="# Needed">
+<p style="color:#ff6b6b">Fee: Pay via CashApp $LetGodHelp | Fiscal Agent: Let God Help Resources Inc</p>
+<button class="btn">Post Need + Pay Fee</button></form></div>
+
+<footer><p>Pharaoh Angels Inc 501(c)(3) EIN 88-0836464 | 160 Bankside Way Sacramento CA</p></footer></body></html>

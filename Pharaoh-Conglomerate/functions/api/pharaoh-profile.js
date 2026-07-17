@@ -1,0 +1,1 @@
+export async function onRequestPost({request, env}){const d=await request.json();await env.PHARAOH_KV.put(`profile:${d.email}`,JSON.stringify(d));return new Response(JSON.stringify({ok:true,entity:"Pharaoh Angels 501(c)(3)",id:d.email}),{headers:{"Content-Type":"application/json","Access-Control-Allow-Origin":"*"}})}
