@@ -1,0 +1,6 @@
+[submodule "data/orgs"]
+	path = data/orgs
+	url = https://github.com/21stCenturyPharaoh/gotpharaohangels.orgs.git
+[submodule "api"]
+	path = api
+	url = https://github.com/21stCenturyPharaoh/gotpharaohangels--angels-hosts-api-.git
